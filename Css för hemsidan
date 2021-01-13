@@ -2,7 +2,7 @@ header {
 font-size : 2em;
 text-align : center;
 color : indigo;
-font-family : monospace;
+font-family : georgia;
 }
 nav {
 font-size : 30px;
