@@ -11,27 +11,6 @@ color : indigo;
 /*font-family är vilket textstil det är på texten.*/
 font-family : georgia;
 }
-nav {
-font-size : 30px;
-font-family : georgia;
-text-align : center;
-text-decoration : none;
-}
-nav ul li {
-width : 200px;
-padding : 10px;
-display : inline-block;
-}
-nav ul li {
-text-decoration : none;
-color : #FFF;
-}
-section {
-display : grid;
-width : 1920px;
-height : 900px;
-justify-content : center;
-align-content : center;
 }
 a:link {
 text-decoration : none;
