@@ -1,10 +1,4 @@
 
-
-header {
-font-size : 2em;
-text-align : center;
-color : indigo;
-}
 nav {
 font-size : 30px;
 font-family : georgia;
@@ -21,7 +15,7 @@ nav ul li {
 }
 section {
 display : grid;
-width : 1920px;
+width : 1024px;
 height : 900px;
 justify-content : center;
 align-content : center;
@@ -53,7 +47,8 @@ text-decoration : none;
 	background: url("lejon.jpg") center no-repeat;
 	background-size: cover;
 	width:1024px;
-	height:768px;
+	height:1200px;
+	
 }
 
 ::-webkit-scrollbar {
@@ -69,3 +64,60 @@ text-decoration : none;
 }
 
 
+/*Indentera css*/
+/*Referar till header som finns i html dokumentet.*/
+header {
+/*font-size bestämmer storleken på texten, 1em är hur stor textenhar varit innan, om man
+har 2em betyder det att den är dubbelt så stor som texten har bestämts innan.*/
+font-size : 2em;
+/*Text-align bestämmer var i dokumentet texten ska vara.*/
+text-align : center;
+/*Color är färgen på texten.*/
+color : indigo;
+/*font-family är vilket textstil det är på texten.*/
+font-family : georgia;
+}
+
+
+h1 {
+  color: rgba(82, 99, 71, 0.8);
+  text-align: center;
+}
+/*Innehåll för grid, ett system för att organisera saker på en hemsida.*/
+.container {
+display: grid;
+grid-template-columns: 160px 160px 160px 160px 160px 160px 160px 160px 160px 160px 160px 160px;
+grid-template-rows: 300px 300px;
+column-gap: 10px;
+row-gap: 10px;
+}
+.container > div {
+  font-size: 300%;
+  font-family: georgia;
+  color: rgba(82, 99, 71, 0.2)
+}
+.kontakt {
+grid-column-start: 2;
+grid-row-start: 2;
+}
+.djur {
+grid-column-start: 5;
+grid-row-start: 2;
+}
+
+.textk {
+text-align:center;
+font-size:15pt;
+}
+
+table,th,td {
+	border 1px solid black;
+	border-collapse: collapse; /*slår ihop kanterna i din border*/
+	width: 100%;
+	grid-column-start:2;
+}
+
+th{
+color:white;
+}
+th:hover {background-color:#700016;}
