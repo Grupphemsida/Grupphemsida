@@ -1,7 +1,14 @@
+/*Indentera css*/
+/*Referar till header som finns i html dokumentet.*/
 header {
+/*font-size bestämmer storleken på texten, 1em är hur stor textenhar varit innan, om man
+har 2em betyder det att den är dubbelt så stor som texten har bestämts innan.*/
 font-size : 2em;
+/*Text-align bestämmer var i dokumentet texten ska vara.*/
 text-align : center;
+/*Color är färgen på texten.*/
 color : indigo;
+/*font-family är vilket textstil det är på texten.*/
 font-family : georgia;
 }
 nav {
@@ -26,9 +33,6 @@ height : 900px;
 justify-content : center;
 align-content : center;
 }
-body {
-background-image : url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fkidsweb.at%2Ffileadmin%2Fuser_files%2Fredakteure%2Fcontent%2Ftiere%2Felefanten_01.jpg&f=1&nofb=1");
-}
 a:link {
 text-decoration : none;
 }
@@ -40,4 +44,37 @@ text-decoration : none;
 }
 a:active {
 text-decoration : none;
+}
+  body {
+  background-image : url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2101625.jpg&f=1&nofb=1");
+  }
+h1 {
+  color: rgba(82, 99, 71, 0.8);
+  text-align: center;
+}
+/*Innehåll för grid, ett system för att organisera saker på en hemsida.*/
+.container {
+/*Aktiverar grid*/
+display: grid;
+/*Sätter upp kolumner som man kan använda sig av för att objekt på hemsidan
+ska få en mer exakt position, i det här fallet fem stycken kolumner där samtliga
+är 400pixlar lång.*/
+grid-template-columns: 160px 160px 160px 160px 160px 160px 160px 160px 160px 160px 160px 160px;
+/*Samma sak som columns fast sätter upp rader istället.*/
+grid-template-rows: 300px 300px;
+column-gap: 10px;
+row-gap: 10px;
+}
+.container > div {
+  font-size: 300%;
+  font-family: georgia;
+  color: rgba(82, 99, 71, 0.2)
+}
+.kontakt {
+grid-column-start: 2;
+grid-row-start: 2;
+}
+.djur {
+grid-column-start: 5;
+grid-row-start: 2;
 }
