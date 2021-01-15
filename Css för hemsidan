@@ -1,48 +1,76 @@
-/*Color är färgen på texten.*/
-
-*/
-/*header {
-  font-size: 2em;
-  text-align: center;
-  color: indigo;
-  font-family: monospace;
+/*Indentera css*/
+/*Referar till header som finns i html dokumentet.*/
+header {
+/*font-size bestämmer storleken på texten, 1em är hur stor textenhar varit innan, om man
+har 2em betyder det att den är dubbelt så stor som texten har bestämts innan.*/
+font-size : 2em;
+/*Text-align bestämmer var i dokumentet texten ska vara.*/
+text-align : center;
+/*font-family är vilket textstil det är på texten.*/
+font-family : georgia;
 }
-nav {
-    font-size: 30px;
-    font-family: georgia;
-    text-align: center;
-    text-decoration: none;
-}
-nav ul li {
-    width: 200px;
-
-    padding: 10px;
-    display: inline-block;
-}
-nav ul li  {
-  text-decoration: none;
-  color:#FFF
-}
-section {
-  display: grid;
-  width: 1920px;
-  height: 900px;
-  justify-content: center;
-  align-content: center;
-}
-body {
-  background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fkidsweb.at%2Ffileadmin%2Fuser_files%2Fredakteure%2Fcontent%2Ftiere%2Felefanten_01.jpg&f=1&nofb=1')
 }
 a:link {
-  text-decoration: none;
+text-decoration: none;
+/*Color är färgen på texten.*/
+color: rgba(82, 99, 71, 0.2);
 }
 a:visited {
-  text-decoration: none;
+text-decoration: none;
+ color: rgba(82, 99, 71, 0.2);
 }
 a:hover {
-  text-decoration: none;
+text-decoration: none;
+ color: rgba(82, 99, 71, 0.2);
 }
 a:active {
-  text-decoration: none;
+text-decoration: none;
+ color: rgba(82, 99, 71, 0.2);
 }
-*/
+  body {
+  background-image : url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2101625.jpg&f=1&nofb=1");
+  color: rgba(82, 99, 71, 0.8);
+  }
+h1 {
+  color: rgba(82, 99, 71, 0.8);
+  text-align: center;
+}
+/*Innehåll för grid, ett system för att organisera saker på en hemsida.*/
+.container {
+/*Aktiverar grid*/
+display: grid;
+/*Sätter upp kolumner som man kan använda sig av för att objekt på hemsidan
+ska få en mer exakt position, i det här fallet fem stycken kolumner där samtliga
+är 400pixlar lång.*/
+grid-template-columns: 160px 160px 160px 160px 160px 160px 160px 160px 160px 160px 160px 160px;
+/*Samma sak som columns fast sätter upp rader istället.*/
+grid-template-rows: 300px 300px;
+column-gap: 10px;
+row-gap: 10px;
+}
+.container > div {
+  font-size: 300%;
+  font-family: georgia;
+  color: rgba(82, 99, 71, 0.2)
+}
+.kontakt {
+grid-column-start: 3;
+grid-row-start: 2;
+font-size: 300%;
+display: grid;
+color: rgba(82, 99, 71, 0.2);
+}
+.djur {
+grid-column-start: 6;
+grid-row-start: 2;
+font-size: 300%;
+display: grid;
+color: rgba(82, 99, 71, 0.2);
+}
+.startsida {
+  grid-column-start: 9;
+  grid-row-start: 2;
+  display: grid;
+  color: rgba(82, 99, 71, 0.2);
+  font-size: 300%;
+}
