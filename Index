@@ -10,7 +10,7 @@ som huvudsakligen används på sidan, i det här fallet svenska-->
     <title>Index</title>
     <!--Här länkas det till ett annat dokument med css som beskriver presentationsstilen på en sida,
     i css kan man exempelvis ändra färgen på texten.-->
-  <link rel="stylesheet" href="css_grid_test.css">
+  <link rel="stylesheet" href="Afrika.css">
   <!--Vid </head> så slutar metadatan, varje tagg som har / före bokstäverna berättar att
   det är slutet på den taggen.-->
 </head>
@@ -22,11 +22,11 @@ ska ha andra villkor jämfört med resten av sidan.-->
       desto lägre prioritet har rubriken. Detta innebär att rubriker med en högre siffra har en mindre
       storlek på själva rubriken jämfört med en rubrik som har en lägre siffra.-->
       <h1>Afrikas vilda djur</h1>
-
-    </header>
+  </header>
 <!--Här börjar body, det innehåll på sidan som användaren kan se.-->
       <body>
 <div class="container">
-    <a class="startsida" href ="file:///C:/Users/Kalle/AppData/Local/atom/Kontaktsida.html">Startsida</a>
-<a class="kontaikt" href ="kontakt" href = "Djur_hub.html">Djur</a>
+    <a class="startsida" href="file:///C:/Users/Kalle/AppData/Local/atom/Kontaktsida.html">Startsida</a>
+<a class="kontakt" href= Kontakt.html">Kontakt</a>
+<a class="djur" href="Djur.html">Djur</a>
 </div>
