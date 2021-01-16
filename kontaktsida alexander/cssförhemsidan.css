@@ -1,0 +1,220 @@
+nav {
+	/*menyn*/
+	font-size: 30px;
+	/*bestämmer storleken på texten (30pixlar)*/
+	font-family: georgia;
+	/*bestämmer typsnitt på text*/
+	text-align: center;
+	/*centrerar texten i din valda grid*/
+}
+
+nav ul li {
+	/*grupp selektor för meny,osorterad lista och defenition av saken i listan*/
+	width: 200px;
+	/*bredd*/
+	padding: 10px;
+	/*genererat utrymme runt elementet*/
+	display: inline-block;
+}
+
+section {
+	/*ett kapitel*/
+	display: grid;
+	width: 1024px;
+	height: 900px;
+	/*Höjd. Ungefär samma sak som bredden motsatsen*/
+	justify-content: center;
+	align-content: center;
+}
+
+body {
+	background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2101625.jpg&f=1&nofb=1");
+	/*bakgrundsbild till index sidan*/
+}
+
+a:link {
+	/*ingen dekoration på länken*/
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+.rubrik {
+	/*klass på ett h1 element*/
+	-webkit-text-stroke-width: 3px;
+	/*ger rubriken som fyllning runt om texten*/
+	-webkit-text-stroke-color: black;
+	/*färg på stroken*/
+	color: white;
+	/*färg för texten*/
+	font-family: Arial;
+}
+
+.bakgrund {
+	background: url("lejon.jpg") center no-repeat;
+	/*bildbakgrund som är centrerad och inte upprepar sig själv*/
+	background-size: 1920px 1451px;
+	/*Ändrar storlek på bilden*/
+	width: 1024px;
+	/*bestämmer storlek för body*/
+	height: 1200px;
+	display: grid;
+	/*Gör så att css förstår att man gör en grid*/
+	grid-template-columns: 80% 80% 80%;
+	/*Storlek på kollumnerna i griden*/
+	grid-template-rows: 10% 10% 15% 20 10%;
+	/*samma som kollumner fast rader och jag har gjort dom i px för att få mer specifika storlekar*/
+	grid-template-areas: /*namnger olika sektioner i sidan så att översta är sidhuvud menyn under osv*/
+	"header" "nav nav nav" "main main main" "footer footer footer";
+	margin: 0;
+}
+
+::-webkit-scrollbar {
+	/*tar bort scroll på sidan men gör den fortfarande fungerande*/
+	display: none;
+}
+
+
+/*Indentera css*/
+
+
+/*Referar till header som finns i html dokumentet.*/
+
+header {
+	/*font-size bestämmer storleken på texten, 1em är hur stor textenhar varit innan, om man
+har 2em betyder det att den är dubbelt så stor som texten har bestämts innan.*/
+	font-size: 2em;
+	/*Text-align bestämmer var i dokumentet texten ska vara.*/
+	text-align: center;
+	/*Color är färgen på texten.*/
+	color: indigo;
+	/*font-family är vilket textstil det är på texten.*/
+	font-family: georgia;
+}
+
+h1 {
+	color: rgba(105, 117, 136, 1.00);
+	/*En färgmodell (redgrönblåalfa)*/
+	text-align: center;
+	border: solid 3px black;
+	/*Border gör en svart linjen längs textens margin*/
+	background-color: rgba(64, 122, 11, 1.00);
+	/*bakgrundsfärgen på bordern*/
+	-webkit-text-stroke-width: 1pt;
+	-webkit-text-stroke-color: black;
+}
+
+
+/*Innehåll för grid, ett system för att organisera saker på en hemsida.*/
+
+.container>div {
+	font-size: 300%;
+	font-family: georgia;
+	color: rgba(82, 99, 71, 0.2)
+}
+
+.kontakt {
+	grid-column-start: 3;
+	grid-row-start: 2;
+	font-size: 300%;
+	display: grid;
+	color: rgba(82, 99, 71, 0.2);
+}
+
+.djur {
+	grid-column-start: 6;
+	grid-row-start: 2;
+	font-size: 300%;
+	display: grid;
+	color: rgba(82, 99, 71, 0.2);
+}
+
+.startsida {
+	grid-column-start: 9;
+	grid-row-start: 2;
+	display: grid;
+	color: rgba(82, 99, 71, 0.2);
+	font-size: 300%;
+}
+
+.textk {
+	text-align: center;
+	font-size: 15pt;
+	display: grid;
+	grid-area: main;
+}
+
+table,
+th,
+td {
+	border-collapse: collapse;
+	/*slår ihop kanterna i din border*/
+	width: 100%;
+	grid-row: 4;
+	/*vilken rad elementet ska befinna sig på*/
+}
+
+td {
+	text-align: center;
+}
+
+th {
+	color: white;
+}
+
+tr:nth-child(2) {
+	background-color: #700016;
+}
+
+
+/*zebra-striping för kollumnerna i tabellen*/
+
+tr:nth-child(3) {
+	background-color: #380070;
+}
+
+tr:nth-child(4) {
+	background-color: #700016;
+}
+
+.meny {
+	grid-row: 2;
+	display: grid;
+}
+
+main {
+	display: grid;
+	grid-row: 3;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.saker {
+	grid-row: 5;
+}
+
+a {
+	text-align: center;
+}
+
+.rights {
+	color: white;
+	margin: 0;
+	text-align: center;
+	grid-column: 1;
+}
+
+footer {
+	grid-row: 10;
+}
