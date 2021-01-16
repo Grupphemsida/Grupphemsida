@@ -60,7 +60,7 @@ a:active {
 	font-family: Arial;
 }
 
-.bakgrund {
+#bakgrund {
 	background: url("lejon.jpg") center no-repeat;
 	/*bildbakgrund som är centrerad och inte upprepar sig själv*/
 	background-size: 1920px 1451px;
