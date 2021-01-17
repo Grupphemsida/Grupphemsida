@@ -10,9 +10,7 @@ width : 200px;
 padding : 10px;
 display : inline-block;
 }
-nav ul li {
 
-}
 section {
 display : grid;
 width : 1024px;
@@ -111,7 +109,7 @@ font-size:15pt;
 }
 
 table,th,td {
-	border 1px solid black;
+	border: 1px solid black;
 	border-collapse: collapse; /*slår ihop kanterna i din border*/
 	width: 100%;
 	grid-column-start:2;
@@ -120,4 +118,64 @@ table,th,td {
 th{
 color:white;
 }
-th:hover {background-color:#700016;}
+th:hover {
+	background-color:#700016;
+}
+
+/*Abdals css börjar här*/
+* {
+  box-sizing: border-box;
+}
+/*backgrounds färg*/
+.djur_sida {
+  background-color: #aaa;
+}
+/*rubrik 2, färg, storlek och position*/
+h2 {
+  background-color: darkorange;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+/*positionerna på de olika rutorna*/
+.sidor {
+  float: left;
+  width: 30%;
+  height: 500px;
+  background: white;
+  padding: 20px;
+}
+
+/*Informations rutan, storleken, färgen och längden*/
+article {
+  float: right;
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 300px;
+}
+
+/*beskriver lite av sidan*/
+.abd {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*det som står längst ner i sidan*/
+footer {
+  background-color:#325971;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+/*bildens bredd och höjd*/
+img{
+	width: 70%;
+	height: 500px;
+}
+
+
+
+/*Abdals css slutar här*/
